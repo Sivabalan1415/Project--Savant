@@ -1,0 +1,96 @@
+@media (min-width:320px) and (max-width:767px) {
+    .custom-container {
+        width: 100%;
+    }
+
+/*.........head...........*/
+    .head-container-1-bg1 .custom-container-2 {
+        margin: 0px;
+        padding: 0px;
+
+        img {
+            width: 80%;
+        }
+
+        .custom-col {
+            padding: 20px;
+
+            h1 {
+                font-size: 28px;
+                line-height: 35px;
+            }
+            .play{
+                margin: 15px auto;
+            }
+            p{
+                margin: 10px;
+            }
+        }
+    }
+/*.........hrad...........*/
+
+/*.........body.............*/
+
+/*....................body-container-1..........*/
+.body-container-1{
+    padding: 13% 10%;
+    .container-1-custom-col{
+        margin-top: 10%;
+    }
+}
+/*....................body-container-1 end..........*/
+/*....................body-container-2 .........*/
+.body-container-2{
+    margin-top: 30px;
+}
+/*....................body-container-2 end..........*/
+/*....................body-container-3..........*/
+.body-container-3{
+    padding: 0px;
+    margin: 0px;
+    .container-2-custom-col-2{
+        img{
+            width: 100%;
+        }
+    }
+}
+/*....................body-container-3 end..........*/
+/*....................body-container-4..........*/
+.body-container-4{
+    img{
+        width: 100%;
+    }
+    h5,h3{
+        font-size: 25px !important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+}
+/*....................body-container-4 end..........*/
+/*....................body-container-5..........*/
+/*....................body-container-5 end..........*/
+/*....................body-container-6..........*/
+.body-container-6{
+    .container-6-custom-col-1{
+        margin-top: 30px;
+        &::after{
+            display: none;
+        }
+    }
+}
+/*....................body-container-6 end..........*/
+/*....................body-container-7..........*/
+/*....................body-container-7 end..........*/
+/*....................body-container-8..........*/
+/*....................body-container-8 end..........*/
+/*....................body-container-9..........*/
+/*....................body-container-9 end..........*/
+/*....................body-container-10..........*/
+/*....................body-container-10 end..........*/
+/*....................body-container-11..........*/
+/*....................body-container-11 end..........*/
+/*.........body end.........*/
+/*.........footer.........*/
+/*.........body end.........*/
+}

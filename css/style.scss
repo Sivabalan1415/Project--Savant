@@ -1,0 +1,1063 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fontsPoppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fontsPoppins-Regular.woff2') format('woff2'),
+        url('../fontsPoppins-Regular.woff') format('woff'),
+        url('../fontsPoppins-Regular.ttf') format('truetype'),
+        url('../fontsPoppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*......root......*/
+$c-w: #fff;
+$c-vb: #692ce8f0;
+$c-v: #a348f9ed;
+$c-b: #000;
+$c-bl: #1500ff99;
+$c-skb: #019aff;
+$c-skbl: #0199ffad;
+$Shadow-c: #a2a2a2;
+$c-gray: #807f7f;
+$c-gray2: #f4f4f4;
+$c-g: #70d000;
+$c-y: #fa0;
+$c-bg: #32c8c8;
+$c-r: #e34444;
+$c-o: #eb763f;
+$c-fb: #1e2034;
+$c-fb1: #1a1c2d;
+$font: 15px;
+
+/*......root end*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.custom-container {
+    box-shadow: 5px 5px 10px $c-b;
+    font-family: 'Poppins';
+    padding: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.fclear {
+    clear: both;
+}
+
+/*.........head.........*/
+.head-container-1-bg1 {
+    background: url('../images/home-bg.jpg') no-repeat 0px 0px /100%;
+
+
+    .head-container-1-bg2 {
+        background-image: linear-gradient(to left, $c-v , $c-vb);
+        padding: 30px 0px;
+    }
+
+
+
+    .custom-container-1 {
+        .fa-bars {
+            color: $c-w;
+        }
+
+        a {
+            color: $c-w;
+            font-size: $font+1;
+
+            &:hover {
+                background: none;
+                color: $c-b;
+            }
+        }
+
+        .navbar-brand {
+            font-size: $font+15;
+            font-weight: bolder;
+
+            &:hover {
+                color: $c-w;
+            }
+        }
+    }
+
+    .custom-container-2 {
+        padding-top: 80px;
+
+        .custom-col {
+            padding-top: 30%;
+
+            h1 {
+                color: $c-w;
+                font-weight: bolder;
+                font-size: $font+25;
+                line-height: 50px;
+            }
+
+            p {
+                color: $c-w;
+                margin-bottom: 35px;
+            }
+
+            .play {
+                width: 250px;
+                height: 60px;
+                border-radius: 50px;
+                background-image: linear-gradient(to left, $c-bl, $c-v);
+                position: relative;
+
+                &:hover .play-icon {
+                    transform: translate(190px, 0px) rotate(360deg);
+                    color: $c-b;
+                }
+            }
+
+            .play-icon {
+                text-align: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: inline-block;
+                box-shadow: 0px 0px 2px $c-b;
+                position: absolute;
+                background-image: linear-gradient(to left, $c-bl, $c-v);
+                transition: 2s;
+
+                i {
+                    font-size: $font+12px;
+                    color: $c-w;
+                    margin: 17px 23px;
+                }
+            }
+
+            .play-text {
+                display: inline-block;
+                padding-top: 5%;
+                margin-left: 75px;
+
+                h2 {
+                    color: $c-w;
+                    font-size: 13px;
+                    margin: 0px 0px 5px 0px;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    color: $c-w;
+                    font-size: $font+2;
+                    margin: 0px;
+                    font-weight: bolder;
+                }
+            }
+
+            .apple {
+                background: $c-skb;
+
+                .play-icon {
+                    box-shadow: 0px 0px 109px $c-b;
+                    background: $c-skbl;
+
+                    i {
+                        margin: 17px 17px;
+                    }
+                }
+            }
+
+        }
+
+        .custom-col1 {
+            text-align: center;
+        }
+    }
+}
+
+/*.........head end.........*/
+/*.........body.............*/
+/*...............body-container-1.........*/
+.body-container-1 {
+    padding: 100px 0px;
+
+    .container-1-custom-col {
+        text-align: center;
+        padding: 50px 0px;
+        box-shadow: 0px 0px 5px $Shadow-c;
+        min-height: 230px;
+        transition: 0s;
+
+        &:hover {
+            box-shadow: 0px 0px 0px;
+        }
+
+        &:hover .bg-child {
+            opacity: 100%;
+            transform: rotate(-1deg) translate(0px, -10px);
+        }
+
+
+
+        & div:first-child {
+            position: relative;
+            ;
+
+            img {
+                width: 60px;
+            }
+
+            h2 {
+                font-weight: bolder;
+                font-size: $font+2;
+            }
+        }
+
+        & div:last-child {
+            position: absolute;
+            top: 0px;
+            width: 90%;
+            height: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            background: $c-g;
+            opacity: 0%;
+            color: $c-w;
+            transition: 1s;
+
+            h3 {
+                font-weight: bolder;
+                font-size: $font+5;
+            }
+
+            p {
+                font-size: $font;
+                line-height: $font+10;
+            }
+        }
+
+        .container-1-custom-col-child2 {
+            background: $c-y !important;
+        }
+
+        .container-1-custom-col-child3 {
+            background: $c-r !important;
+        }
+
+        .container-1-custom-col-child4 {
+            background: $c-o !important;
+        }
+    }
+}
+
+/*....................body-container-1 end..........*/
+/*....................body-container-2..........*/
+.body-container-2 {
+    background: url(../images/bg-shape-1.png) no-repeat 773px -164px / 45%;
+    color: $c-b;
+    margin-top: 80px;
+
+    .container-2-custom-col-1 {
+        img {
+            width: 90%;
+        }
+    }
+
+    .container-2-custom-col-2 {
+        h2 {
+            color: $c-y;
+            font-weight: bolder;
+            font-size: $font+8;
+        }
+
+        h3 {
+            text-transform: capitalize;
+            font-weight: bolder;
+            font-size: $font+20;
+            line-height: $font+35;
+        }
+
+        p {
+            font-size: $font;
+            font-weight: 500;
+            line-height: $font+10;
+            color: $c-gray;
+        }
+
+        img {
+            width: 65px;
+            box-shadow: 1px 1px 4px $Shadow-c;
+            margin: 5px 10px 5px 3px;
+            padding: 13px;
+            transition: 1s;
+        }
+
+        .media {
+            margin-top: 40px;
+            padding: 10px;
+
+            &:hover h4 {
+                box-shadow: 0px 0px 10px $c-g;
+            }
+
+            &:hover .media-left img {
+                transform: rotate(5deg) translate(0px, -10px);
+            }
+
+            h4 {
+                font-weight: bolder;
+                font-size: $font+6;
+                text-transform: capitalize;
+                transition: 1s;
+            }
+
+            p {
+                font-size: $font;
+                line-height: $font+10;
+            }
+        }
+    }
+}
+
+/*....................body-container-2 end..........*/
+/*....................body-container-3..........*/
+.body-container-3 {
+    padding: 100px 0px;
+    margin-top: 40px;
+
+    .container-2-custom-col-1 {
+        padding: 50px;
+        margin-top: 40px;
+
+        h2 {
+            font-weight: bolder;
+            line-height: 45px;
+        }
+
+        p {
+            color: $c-gray;
+            margin: 20px 0px;
+
+        }
+
+        img {
+            width: 55px;
+            border-radius: 2px;
+            margin: 5px;
+            box-shadow: 1px 1px 4px $Shadow-c;
+            padding: 10px;
+            transition: 1s;
+
+            &:hover {
+                transform: translate(1px, -10px);
+            }
+        }
+
+        button {
+            background: $c-bg;
+            border: none;
+            font-size: $font;
+            color: $c-w;
+            font-weight: bolder;
+            margin: 30px 10px 0px 0px;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transition: 1s;
+
+            i {
+                transition: 1s;
+            }
+
+            &:hover i {
+                color: rebeccapurple;
+            }
+
+            &:hover {
+                box-shadow: 5px 5px 20px $Shadow-c;
+            }
+        }
+    }
+}
+
+/*....................body-container-3 end..........*/
+/*....................body-container-4..........*/
+.body-container-4 {
+    padding: 0px;
+    text-align: center;
+    color: $c-w;
+    font-weight: bolder;
+
+    .container-4-bg1 {
+        background: url('../images/home-bg.jpg') no-repeat 0px 0px /100%;
+
+        .container-4-bg2 {
+            background-image: linear-gradient(to left, $c-v , $c-vb);
+            padding: 7% 0px;
+
+            h2,
+            h4 {
+                font-size: $font+2;
+                margin: 15px;
+                font-weight: bolder;
+            }
+
+            h3,
+            h5 {
+                font-size: $font+20;
+                margin: 15px;
+                font-weight: bolder;
+            }
+
+            p {
+                text-transform: capitalize;
+                font-size: $font+3;
+                margin: 15px;
+                font-weight: bolder;
+            }
+
+            .container-4-custom-col-1 {
+                h6 {
+                    font-size: $font+15;
+                    font-weight: bolder;
+                    margin: 5px;
+                    font-weight: bolder;
+                }
+
+                p {
+                    font-size: $font;
+                }
+            }
+
+            button {
+                border: none;
+                background: $c-bg;
+                font-size: $font;
+                margin: 10px;
+                padding: 10px 30px;
+                border-radius: 50px;
+                transition: 1s;
+
+                &:hover {
+                    box-shadow: 5px 5px 20px $c-b;
+                }
+            }
+        }
+    }
+}
+
+/*....................body-container-4 end..........*/
+/*....................body-container-5..........*/
+.body-container-5 {
+    padding: 0px;
+    text-align: center;
+
+    .custom-jumbotron {
+        border-radius: 0px;
+        padding: 70px 0px;
+        background: $c-gray2;
+
+        h2 {
+            font-size: $font+3;
+            font-weight: bolder;
+            color: $c-y;
+        }
+
+        h3 {
+            font-size: $font+25;
+            font-weight: bolder;
+        }
+    }
+}
+
+/*....................body-container-5 end..........*/
+/*....................body-container-6..........*/
+.body-container-6 {
+    text-align: center;
+    padding: 5% 0px;
+
+    h2 {
+        font-size: $font+3;
+        font-weight: bolder;
+        color: $c-y;
+    }
+
+    h3 {
+        font-size: $font+20;
+        font-weight: bolder;
+        margin-bottom: 7%;
+    }
+
+    .container-6-custom-col-1 {
+        position: relative;
+
+        img {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            box-shadow: 0px 0px 3px $Shadow-c;
+            transition: 1s;
+
+            &:hover {
+                width: 305px;
+                height: 305px;
+                box-shadow: 5px 5px 10px $Shadow-c;
+            }
+        }
+
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 305px;
+            height: 100%;
+            z-index: -1;
+            transform: rotate(3deg);
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 3px $Shadow-c;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 305px;
+            height: 100%;
+            z-index: -2;
+            left: 25px;
+            border-radius: 4px;
+            transform: rotate(-5deg);
+            box-shadow: 0px 0px 3px $Shadow-c;
+            border: 1px solid #ddd;
+
+        }
+
+    }
+
+    .container-6-custom-col {
+        h2 {
+            color: $c-b;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: $font;
+            margin: 0px;
+            color: $c-v;
+        }
+
+        i {
+            font-size: $font+2;
+            padding: 5px 10px;
+            margin: 15px 5px;
+            border-radius: 2px;
+            transition: 1s;
+
+            &:hover {
+                transform: rotate(-5deg) translate(0px, -5px);
+            }
+
+            &:hover.fa-facebook {
+                background: $c-bl;
+                color: $c-w;
+            }
+
+            &:hover.fa-linkedin {
+                background: $c-skb;
+                color: $c-w;
+            }
+
+            &:hover.fa-twitter {
+                background: $c-bg;
+                color: $c-w;
+            }
+        }
+
+        .fa-facebook {
+            color: $c-bl;
+            border: 2px dashed $c-bl;
+        }
+
+        .fa-linkedin {
+            color: $c-skb;
+            border: 2px dashed $c-skb;
+        }
+
+        .fa-twitter {
+            color: $c-bg;
+            border: 2px dashed $c-bg;
+        }
+    }
+}
+
+/*....................body-container-6 end..........*/
+/*....................body-container-7..........*/
+.body-container-7 {
+    background: url('../images/home-bg.jpg') no-repeat 0px 0px /100%;
+    padding: 0px;
+
+    .container-7-bg {
+        background-image: linear-gradient(to left, $c-v , $c-vb);
+        text-align: center;
+        padding: 8% 0px;
+
+        h2 {
+            font-size: $font+3;
+            font-weight: bolder;
+            color: $c-y;
+        }
+
+        h3 {
+            font-size: $font+20;
+            font-weight: bolder;
+            color: $c-w;
+        }
+
+        .container-7-custom-col {
+            background: $c-w;
+            padding: 30px 15px;
+            border-radius: 2px;
+            margin-top: 20px;
+
+            &:hover img {
+                border: 3px solid $c-v;
+                transform: rotate(5deg);
+                box-shadow: 5px 5px 10px $c-gray;
+            }
+
+            &:hover h4 {
+                color: $c-v;
+            }
+
+            i {
+                color: $c-y;
+                font-size: $font+3;
+            }
+
+            p {
+                color: $c-gray;
+                margin: 15px 0px;
+            }
+
+            img {
+                border-radius: 50%;
+                width: 90px;
+                padding: 5px;
+                border: 2px solid yellow;
+                transition: 1s;
+            }
+
+            h4 {
+                font-size: $font+2;
+                font-weight: bolder;
+                color: $c-b;
+                transition: 1s;
+            }
+
+            h5 {
+                color: $c-gray;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+/*....................body-container-7 end..........*/
+/*....................body-container-8..........*/
+.body-container-8 {
+    text-align: center;
+    padding: 8% 0px;
+
+    h2 {
+        font-size: $font+3;
+        font-weight: bolder;
+        color: $c-y;
+    }
+
+    h3 {
+        font-size: $font+20;
+        font-weight: bolder;
+        color: $c-b;
+    }
+
+    .container-8-custom-col {
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+        }
+
+        .custom-panel {
+            text-align: left;
+            border: 0px;
+
+            .custom-panal-heading {
+                background: transparent;
+
+                h4 {
+                    font-weight: bolder;
+                    font-size: $font+3;
+                }
+            }
+
+            .custom-panel-body {
+                padding: 10px 25px;
+
+                p {
+                    color: $c-gray;
+                    font-size: $font;
+                    line-height: $font+10;
+                    margin: 30px 0px;
+                }
+            }
+        }
+    }
+}
+
+/*....................body-container-8 end..........*/
+/*....................body-container-9..........*/
+.body-container-9 {
+    background: url(../images/download-bg.jpg) no-repeat -241px -160px / 130%;
+    padding: 0px;
+
+    .container-9-bg {
+        background: $c-v ;
+        text-align: center;
+        padding: 8% 20%;
+        color: $c-w;
+    }
+
+    h2 {
+        font-size: $font+3;
+        font-weight: bolder;
+        color: $c-y;
+    }
+
+    h3 {
+        font-size: $font+20;
+        font-weight: bolder;
+        color: $c-w;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: $font+10;
+    }
+
+    button {
+        color: $c-w;
+        border: 0px;
+        margin: 20px 10px;
+        background: none;
+
+
+
+        .custom-button {
+            background: $c-bg;
+            padding: 5px 35px;
+            border-radius: 50px;
+            text-align: left;
+            transition: 1s;
+
+            &:hover {
+                box-shadow: 5px 5px 10px $c-b;
+            }
+
+            &:hover h5 {
+                color: $c-v;
+            }
+
+            &:hover i {
+                color: $c-v;
+            }
+
+            i {
+                display: inline-block;
+                font-size: $font+15;
+                margin-right: 10px;
+                transition: 1s;
+            }
+
+            div {
+                display: inline-block;
+
+                h4 {
+                    font-size: 13px;
+                    margin: 0px;
+                }
+
+                h5 {
+                    font-size: $font;
+                    margin: 0px;
+                    font-weight: bolder;
+                    transition: 1s;
+                }
+            }
+        }
+
+        .windows {
+            background: $c-y;
+            padding: 5px 40px;
+        }
+    }
+}
+
+/*....................body-container-9 end..........*/
+/*....................body-container-10..........*/
+.body-container-10 {
+    text-align: center;
+    padding: 6% 0px;
+
+    h2 {
+        font-size: $font+3;
+        font-weight: bolder;
+        color: $c-y;
+    }
+
+    h3 {
+        font-size: $font+20;
+        font-weight: bolder;
+        color: $c-b;
+    }
+
+    .container-10-custom-col-1 {
+        text-align: left;
+        margin: 30px 0px;
+
+        input {
+            width: 100%;
+            border: 0px;
+            padding: 10px 0px;
+            margin-top: 10px;
+            border-bottom: 2px solid $Shadow-c;
+            outline: none;
+
+            &:focus {
+                border: 0px;
+                border-bottom: 1px solid $c-g;
+            }
+        }
+    }
+
+    .col-2 {
+        margin-top: 30px;
+
+        textarea {
+            outline: none;
+            width: 100%;
+            padding: 10px 0px;
+            border: 0px;
+            border-bottom: 2px solid $Shadow-c;
+
+            &:focus {
+                border: 0px;
+                border-bottom: 1px solid $c-g;
+            }
+        }
+    }
+
+    button {
+        background: $c-bg;
+        padding: 10px 30px;
+        margin-top: 30px;
+        font-size: $font+5;
+        color: $c-w;
+        font-weight: bolder;
+        border: 0px;
+        border-radius: 50px;
+        transition: 1s;
+
+        &:hover {
+
+            box-shadow: 5px 5px 10px $c-b;
+        }
+    }
+}
+
+/*....................body-container-10 end..........*/
+/*....................body-container-11..........*/
+.body-container-11 {
+    padding: 2% 0px;
+    background: $c-gray2;
+
+    .col-11 {
+
+        padding: 4% 0px;
+        margin-left: 10px;
+    }
+
+    .container-11-custom-col {
+
+
+        h2 {
+            color: $c-b;
+            font-weight: bolder;
+            font-size: $font+10;
+        }
+
+        p {
+            color: $c-gray;
+            font-size: $font;
+            text-transform: capitalize;
+        }
+
+        input {
+            padding: 10px;
+            height: 50px;
+            border: 0px;
+            background: $c-w;
+
+            &:focus {
+                box-shadow: 0px 0px 10px $c-skbl;
+            }
+        }
+
+        span {
+            color: $c-w;
+            font-size: $font+2;
+            font-weight: bolder;
+            background: $c-bg;
+            padding: 15px 30px;
+            transition: 1s;
+
+            &:hover {
+                box-shadow: 5px 5px 10px $c-b;
+            }
+        }
+    }
+}
+
+/*....................body-container-11 end..........*/
+/*.........body end.........*/
+/*.........footer.........*/
+/*....................footer-container-1..........*/
+.footer-container-1 {
+    background: $c-fb;
+    color: $c-w;
+    padding: 5% 0px;
+
+    .footer-container-col {
+        padding: 10px 0px;
+
+        h2 {
+            font-weight: bolder;
+            font-size: $font+10;
+            margin-bottom: 10%;
+        }
+
+        a {
+            color: $Shadow-c;
+            display: block;
+            margin-bottom: 10px;
+
+            &:hover {
+                color: $c-w;
+            }
+        }
+
+        p {
+            line-height: $font+10;
+            margin: 20px 0px;
+        }
+
+        button {
+            background: $c-bg;
+            border: none;
+            font-size: $font;
+            color: $c-w;
+            font-weight: bolder;
+            margin: 0px 0px 20px 0px;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transition: 1s;
+
+            i {
+                transition: 1s;
+            }
+
+            &:hover i {
+                color: rebeccapurple;
+            }
+
+            &:hover {
+                box-shadow: 5px 5px 20px $Shadow-c;
+            }
+        }
+    }
+
+    .footer-col1 {
+        a {
+            display: inline;
+            color: $c-w;
+
+            i {
+                font-size: $font+5;
+                padding: 10px;
+                border-radius: 4px;
+                margin-right: 5px;
+                background: $c-bg;
+                transition: 1s;
+            }
+        }
+
+        .fa-facebook:hover {
+            background: $c-bl;
+            transform: rotate(-5deg) translate(0px, -10px);
+        }
+
+        .fa-twitter:hover {
+            background: $c-b;
+            transform: rotate(-5deg) translate(0px, -10px);
+        }
+
+        .fa-linkedin:hover {
+            background: $c-skbl;
+            transform: rotate(-5deg) translate(0px, -10px);
+
+        }
+
+        .fa-youtube:hover {
+            background: $c-r;
+            transform: rotate(-5deg) translate(0px, -10px);
+        }
+    }
+}
+
+/*....................footer-container-1 end..........*/
+/*....................footer-container-2..........*/
+.footer-container-2 {
+    background: $c-fb1;
+    text-align: center;
+    padding: 1% 0px;
+
+
+    a {
+        display: block;
+        color: $c-w;
+        font-weight: bolder;
+        margin: 10px;
+    }
+}
+
+/*....................footer-container-2 end..........*/
+.custom-model {
+    .modal-header {
+        background: $c-v;
+
+        h4 {
+            font-weight: bolder;
+            font-size: $font+10;
+
+            &::first-letter {
+                color: $c-w;
+                font-size: $font+20;
+            }
+        }
+    }
+}
+
+/*.........footer end.........*/
